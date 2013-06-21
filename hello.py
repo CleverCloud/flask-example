@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def headers():
-    return str(request.headers) 
+    return '<br/>'.join(['%s => %s' % (key, value) for (key, value) in request.headers.items()])
 
 @app.route("/favicon.ico")
 def favicon():
