@@ -1,11 +1,11 @@
 # -*- coding:utf-8 -*-
 
-from flask import Flask, Response
+from flask import Flask, Response, Request
 app = Flask(__name__)
 
 @app.route("/")
 def headers():
-    return flask.request.headers.get("X-Forwarded-Protocol")
+    return Request.headers.get("X-Forwarded-Protocol")
 #    return str(flask.request.headers) 
 
 @app.route("/favicon.ico")
