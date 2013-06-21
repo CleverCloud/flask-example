@@ -5,8 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def headers():
-    return request.headers.get("X-Forwarded-Protocol")
-#    return str(flask.request.headers) 
+    return str(flask.request.headers) 
 
 @app.route("/favicon.ico")
 def favicon():
