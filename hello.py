@@ -7,6 +7,10 @@ app = Flask(__name__)
 def hello():
     return str(request.headers)
 
+@app.route("/hello")
+def hello():
+    return "hello"
+
 @app.route("/favicon.ico")
 def favicon():
     resp = Response(status=200, mimetype='image/png')
