@@ -1,1 +1,1 @@
-{ "deploy": { "module": "hello:app", "force_https": true } }
+{ "deploy": { "module": "hello:app"} }
