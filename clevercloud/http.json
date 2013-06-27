@@ -1,6 +1,6 @@
 {
     "aliases": {
-        "/foobar" : "/",
-        "/test" : "/" 
+        "/foobar" : "/foo.html",
+        "/test" : "/test.html" 
     }
 }
