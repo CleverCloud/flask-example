@@ -1,1 +1,8 @@
-{ "deploy": { "module": "hello:app"} }
+{
+    "deploy": {
+        "module": "hello:app"
+    },
+    "hooks": {
+        "postDeploy": "cleverbuild.sh"
+    }
+}
