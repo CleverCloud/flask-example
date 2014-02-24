@@ -1,1 +1,1 @@
-{ "deploy": { "module": "hello:app"} }
+{ "deploy": { "module": "hello:app", "static": "/static/"} }
