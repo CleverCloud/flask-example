@@ -13,6 +13,9 @@ def favicon():
     resp = Response(status=200, mimetype='image/png')
     return resp
 
+@app.route("/pyver")
+    return sys.version_info
+
 @app.route("/tag")
 def tag():
     p = subprocess.Popen(['git', 'describe', '--tags', '--abbrev=0'], stdout=subprocess.PIPE)
