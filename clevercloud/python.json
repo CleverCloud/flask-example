@@ -1,1 +1,1 @@
-{ "deploy": { "pyver": 3, "module": "hello:app", "static": "/static/"} }
+{ "deploy": { "module": "hello:app", "static": "/static/"} }
