@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 
+import platform
 import subprocess
 from flask import Flask, Response, request
 app = Flask(__name__)
@@ -15,7 +16,7 @@ def favicon():
 
 @app.route("/pyver")
 def pyver():
-    return sys.version_info
+    return platform.python_version()
 
 @app.route("/tag")
 def tag():
