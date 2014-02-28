@@ -14,6 +14,7 @@ def favicon():
     return resp
 
 @app.route("/pyver")
+def pyver():
     return sys.version_info
 
 @app.route("/tag")
