@@ -1,6 +1,6 @@
 {
     "deploy": {
-        "python_version": 2,
+        "python_version": 3,
         "module": "hello:app",
         "static": "/static/"
     }
