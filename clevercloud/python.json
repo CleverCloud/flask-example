@@ -1,6 +1,5 @@
 {
     "deploy": {
-        "python_version": 3,
         "module": "hello:app",
         "static": "/clevercloud/static/"
     }
